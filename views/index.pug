@@ -1,0 +1,17 @@
+head
+  link(rel='stylesheet', href='../style.css')
+  link(rel='icon', href='icon.ico', type='image/x-icon')
+body
+  header.header 
+   
+ 
+    h1 Node.js Invoice extraction
+
+  h2 please upload an image or PDF of your invoice
+
+  
+  form(action="/" method = "POST" enctype="multipart/form-data").form  
+    p
+    |Your reciept
+    input(type='file', name='imageSource').input   
+    input(type='submit', value='Submit')
